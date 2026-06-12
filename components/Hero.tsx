@@ -16,6 +16,7 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center">
         <div className="max-w-6xl mx-auto px-6 w-full">
           <div className="max-w-3xl">
+
             <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full mb-6">
               ⭐⭐⭐⭐⭐ 5.0 Google rating · 4 anmeldelser
             </div>
@@ -30,6 +31,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
+
               <a
                 href="tel:+4520111021"
                 className="bg-orange-500 hover:bg-orange-600 px-6 py-4 rounded-lg font-semibold transition"
@@ -37,10 +39,15 @@ export default function Hero() {
                 Ring nu
               </a>
 
-              <button className="border border-white/30 hover:bg-white/10 px-6 py-4 rounded-lg transition">
-                Få et tilbud
-              </button>
+              <a
+  href="#contact"
+  className="border border-white/30 hover:bg-white/10 px-6 py-4 rounded-lg transition"
+>
+  Få et tilbud
+</a>
+
             </div>
+
           </div>
         </div>
       </div>
