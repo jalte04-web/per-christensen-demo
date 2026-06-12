@@ -19,6 +19,10 @@ export default function Projects() {
         </p>
       </div>
 
+      <p className="text-center text-zinc-500 text-sm mb-4 md:hidden">
+      ← Swipe for at se flere projekter →
+      </p>
+
       <div className="flex gap-6 overflow-x-auto pb-4">
 
         {/* Tagarbejde */}
