@@ -17,10 +17,6 @@ export default function Hero() {
         <div className="max-w-6xl mx-auto px-6 w-full">
           <div className="max-w-3xl">
 
-            <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full mb-6">
-              ⭐⭐⭐⭐⭐ 5.0 Google rating · 4 anmeldelser
-            </div>
-
             <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
               Din lokale tømrer i Odsherred
             </h2>
