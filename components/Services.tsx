@@ -18,10 +18,12 @@ export default function Services() {
           med alt fra mindre opgaver til større renoveringsprojekter.
         </p>
       </div>
-
+        <p className="text-center text-zinc-500 text-sm mb-4 lg:hidden">
+           ← Swipe for at se flere ydelser →
+      </p>
       <div className="flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto lg:overflow-visible pb-4 snap-x snap-mandatory scroll-smooth">
 
-        <div className="min-w-[85vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
+        <div className="min-w-[75vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
           <div className="text-4xl mb-4">🏠</div>
 
           <h3 className="text-xl font-bold mb-3">
@@ -33,7 +35,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="min-w-[85vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
+        <div className="min-w-[75vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
           <div className="text-4xl mb-4">🪟</div>
 
           <h3 className="text-xl font-bold mb-3">
@@ -45,7 +47,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="min-w-[85vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
+        <div className="min-w-[75vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
           <div className="text-4xl mb-4">🏡</div>
 
           <h3 className="text-xl font-bold mb-3">
@@ -57,7 +59,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="min-w-[85vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
+        <div className="min-w-[75vw] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
           <div className="text-4xl mb-4">🛠️</div>
 
           <h3 className="text-xl font-bold mb-3">
