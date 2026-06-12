@@ -1,8 +1,41 @@
+"use client";
+
+import { useState } from "react";
+
 export default function FAQ() {
+  const [open, setOpen] = useState<number | null>(0);
+
+  const questions = [
+    {
+      question: "Hvilke områder arbejder I i?",
+      answer:
+        "Vi udfører opgaver i hele Odsherred og omegn for både private og erhverv.",
+    },
+    {
+      question: "Giver I gratis tilbud?",
+      answer:
+        "Ja. Vi giver altid et uforpligtende tilbud på dit projekt.",
+    },
+    {
+      question: "Arbejder I med sommerhuse?",
+      answer:
+        "Ja. Vi har stor erfaring med renovering og vedligeholdelse af sommerhuse i Odsherred.",
+    },
+    {
+      question: "Hvilke typer opgaver udfører I?",
+      answer:
+        "Vi udfører blandt andet tagarbejde, renovering, vinduer, døre og specialopgaver.",
+    },
+    {
+      question: "Hvordan kommer jeg i kontakt med jer?",
+      answer:
+        "Du kan ringe direkte på +45 20 11 10 21 eller udfylde kontaktformularen på siden.",
+    },
+  ];
+
   return (
     <section className="max-w-5xl mx-auto px-6 py-32">
       <div className="text-center mb-16">
-
         <p className="text-orange-400 font-semibold tracking-widest uppercase mb-4">
           FAQ
         </p>
@@ -11,60 +44,39 @@ export default function FAQ() {
           Ofte stillede spørgsmål
         </h2>
 
+        <p className="text-zinc-400">
+          Her finder du svar på de spørgsmål vi oftest får.
+        </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
+        {questions.map((item, index) => (
+          <div
+            key={index}
+            className="bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden"
+          >
+            <button
+              onClick={() =>
+                setOpen(open === index ? null : index)
+              }
+              className="w-full flex items-center justify-between p-6 text-left"
+            >
+              <span className="font-semibold text-lg">
+                {item.question}
+              </span>
 
-        <div className="bg-zinc-900 rounded-2xl p-6">
-          <h3 className="font-bold text-xl mb-3">
-            Hvilke områder arbejder I i?
-          </h3>
+              <span className="text-orange-400 text-2xl">
+                {open === index ? "−" : "+"}
+              </span>
+            </button>
 
-          <p className="text-zinc-400">
-            Vi udfører opgaver i hele Odsherred og omegn for både private og erhverv.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-2xl p-6">
-          <h3 className="font-bold text-xl mb-3">
-            Giver I gratis tilbud?
-          </h3>
-
-          <p className="text-zinc-400">
-            Ja. Vi giver altid et uforpligtende tilbud på dit projekt.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-2xl p-6">
-          <h3 className="font-bold text-xl mb-3">
-            Arbejder I med sommerhuse?
-          </h3>
-
-          <p className="text-zinc-400">
-            Ja. Vi har stor erfaring med renovering og vedligeholdelse af sommerhuse i Odsherred.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-2xl p-6">
-          <h3 className="font-bold text-xl mb-3">
-            Hvilke typer opgaver udfører I?
-          </h3>
-
-          <p className="text-zinc-400">
-            Vi udfører blandt andet tagarbejde, renovering, vinduer, døre og specialopgaver.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-2xl p-6">
-          <h3 className="font-bold text-xl mb-3">
-            Hvordan kommer jeg i kontakt med jer?
-          </h3>
-
-          <p className="text-zinc-400">
-            Du kan ringe direkte eller udfylde kontaktformularen på siden.
-          </p>
-        </div>
-
+            {open === index && (
+              <div className="px-6 pb-6 text-zinc-400">
+                {item.answer}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </section>
   );
