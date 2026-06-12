@@ -33,11 +33,11 @@ export default function Reviews() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="bg-zinc-900 p-8 rounded-xl border border-zinc-800 text-center"
+            className="min-w-[300px] md:min-w-0 bg-zinc-900 p-8 rounded-xl border border-zinc-800 text-center snap-center"
           >
             <div className="text-orange-400 text-xl mb-4">
               ★★★★★

@@ -19,9 +19,9 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto lg:overflow-visible pb-4 snap-x snap-mandatory">
 
-        <div className="bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition">
+        <div className="min-w-[300px] lg:min-w-0 bg-zinc-900 p-8 rounded-2xl hover:bg-zinc-800 transition snap-center">
           <div className="text-4xl mb-4">🏠</div>
 
           <h3 className="text-xl font-bold mb-3">

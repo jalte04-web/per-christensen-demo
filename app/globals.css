@@ -28,3 +28,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
